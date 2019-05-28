@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>React Hello World</title>
+    
+</head>
+
+<body>
+    <div id="Resume"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+
+    <script type="text/babel">
+        function App(props) {
+            console.log(props)
+            return (
+            <main id = 'resume'>
+                <header>
+                    <section id='contact'>
+                        <h1>Sally Student</h1> 
+                        <p>1234 West Street, Miami, Fl 33103</p>
+                        <p>Cell:(555)505-1234</p>
+                        <p>SuperSally99@gmail.com</p>
+                        <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg"/>
+                    </section>
+                </header>
+
+            <section id = 'basicInfo'>
+                <h2>Education</h2>
+                <p>Bachelor of Computer Science</p>
+                <ul>
+                    <li>Sesame Street University 2010-2014</li>
+                    <li>Miami, Florida</li>
+                </ul>
+            </section>
+            
+            <section class ='employment'>
+                <h2>Employment History</h2>
+                <p>Web Developer at University of Miami (2014-2016)</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu lorem ac erat iaculis feugiat vel non justo. Maecenas commodo ante dui, eget interdum mauris faucibus non</li>
+                    <li>Nunc pharetra urna sit amet augue suscipit feugiat. Quisque nec dignissim risus. Aliquam tincidunt urna vel odio faucibus fringilla</li>
+                </ul>
+            </section>
+            
+            <section class = 'employment'>
+                <p>Free Lance Web Developer (2015-2018)</p> 
+                <ul>
+                    <li>Vestibulum id enim eget ante pharetra sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</li>
+                    <li>Vivamus maximus, ante id dapibus convallis, arcu arcu suscipit dui, eget pulvinar ipsum nunc et dui. Mauris ultricies ex nisl, vehicula placerat est fermentum eu</li>
+                </ul>
+            </section>
+
+            </main>
+            );
+        }
+            ReactDOM.render(
+            <App/>,
+            document.querySelector('#Resume')
+            );
+                    
+    </script>
+</body>
+
+</html>
